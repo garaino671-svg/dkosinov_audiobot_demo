@@ -49,13 +49,13 @@ func main() {
 			continue
 		}
 
-		if err := checkVideoDuration(text); err != nil {
-			bot.Send(tgbotapi.NewMessage(
-				chatID,
-				"❌ Видео слишком длинное (максимум 2 часа)",
-			))
-			continue
-		}
+		// if err := checkVideoDuration(text); err != nil {
+		// 	bot.Send(tgbotapi.NewMessage(
+		// 		chatID,
+		// 		"❌ Видео слишком длинное (максимум 2 часа)",
+		// 	))
+		// 	continue
+		// }
 
 		// одно сообщение, которое будем редактировать
 		statusMsg, _ := bot.Send(
